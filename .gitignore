@@ -11,7 +11,7 @@
 [Mm]emoryCaptures/
 /Assets/AssetStoreTools*
 /Assets/ParrelSync*
-
+Snops_clone_*
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
