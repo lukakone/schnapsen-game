@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class DrawCards : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class DrawCards : MonoBehaviour
             player1Card.GetComponent<Image>().sprite = card1.Source;
             player1Card.transform.SetParent(Player1Area.transform, false);
             Player1Cards.Add(new KeyValuePair<Card, GameObject>(card1, player1Card));
+   
             //Player 2 card
             Sprite getCard2 = GetRandomCard();
             Card card2 = new Card(i, getCard2.name, getCard2, GameLogic.GetCardValue(getCard2.name));
@@ -71,8 +73,9 @@ public class DrawCards : MonoBehaviour
             {
                 player1Card.transform.rotation = Quaternion.Euler(Vector3.forward * -20);
             }*/
-        }
-            print("Player 1\n");
+        }  
+
+        print("Player 1\n");
             print(KeyValuePairToString(Player1Cards));
             print("Player 2\n");
             print(KeyValuePairToString(Player2Cards));
