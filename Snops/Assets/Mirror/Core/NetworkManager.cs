@@ -255,6 +255,7 @@ namespace Mirror
             NetworkServer.tickRate = sendRate;
         }
 
+
         // full server setup code, without spawning objects yet
         void SetupServer()
         {
@@ -1258,6 +1259,7 @@ namespace Mirror
 
         /// <summary>Called on the server when a new client connects.</summary>
         public virtual void OnServerConnect(NetworkConnectionToClient conn) {}
+
 
         /// <summary>Called on the server when a client disconnects.</summary>
         // Called by NetworkServer.OnTransportDisconnect!

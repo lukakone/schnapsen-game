@@ -7,11 +7,14 @@ public class DealCards : NetworkBehaviour
 {
     public PlayerManager PlayerManager;
 
+    private bool dealCards = false;
+    [SyncVar]
+    public int playersConnected;
+
     public void OnClick()
     {
         NetworkIdentity networkIdentity = NetworkClient.connection.identity;
         PlayerManager = networkIdentity.GetComponent<PlayerManager>();
         PlayerManager.CmdDealCards();
     }
-
 }

@@ -95,9 +95,9 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0.1
-  PlayerArea: {fileID: 0}
-  EnemyArea: {fileID: 0}
   cards:
   - {fileID: 2589667017170724246, guid: 7096933029977894c92683a93cd2f144, type: 3}
   - {fileID: 2589667017170724246, guid: b8ac8d608e5683c49b82c904a195e7e6, type: 3}
-  DropZone: {fileID: 0}
+  PlayerArea: {fileID: 0}
+  EnemyArea: {fileID: 0}
+  DropArea: {fileID: 0}
